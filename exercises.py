@@ -11,7 +11,14 @@
 # ...
 # ...
 ##'Number 8, your order is ready.'
+i = 1
+while i <= 8:
+    print(i)
+    i=i+1
 
+
+for num in range(1, 9):
+    print('Number ' + str(num) + ' your order is ready.')
 
 #2 Now Serving
 #Create a while loop that will print the following message:
