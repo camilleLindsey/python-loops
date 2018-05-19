@@ -24,7 +24,7 @@ for num in range(1, 9):
 # ...
 # 'Now serving number 5.'
 i = 1
-while i <= 8:
+while i <= 6:
     print('Now serving number ' + str(i)+ '.')
     i=i+1
 
@@ -39,14 +39,51 @@ while i <= 8:
 # ...
 # 9 x 3 = 27
 
+i = 0
+while i < 9:
+  
+    i +=1
+    print(str(i) + ' X ' + str(3) + ' = ' + str(i * 3))
+# 1 x 3 = 3
+# 2 x 3 = 6
+# 3 x 3 = 9
+# 4 x 3 = 12
+# 5 x 3 = 15
+# 6 x 3 = 18
+# 7 x 3 = 21
+# 8 x 3 = 24
+# 9 x 3 = 27
 
 #4. Uber This!
 # Declare a variable named cars and assign it a list of 5 of your favorite car brands. Next create a for loop that will iterate through the cars list and prints the following: 'My next car will be a red x.' Where x represents each item in the list.
 
+cars = ['Tesla', 'Toyota', 'BMW', 'Ferrari', 'Lamborghini']
+for car in cars:
+    print('My next car will be a red ' + car + '.')
+# My next car will be a red Tesla.
+# My next car will be a red Toyota.
+# My next car will be a red BMW.
+# My next car will be a red Ferrari.
+# My next car will be a red Lamborghini.
 
 #5 Uber This Again
 #Print each item in the above cars list using a while loop.
 
+#Creating a list of names
+# names = ['John', 'Jerome', 'Paul', 'George', 'Andy', 'Michael']
+
+#Creating the variable that will hold our count
+# i = 0
+
+# #Creating the while loop
+# while i < len(names): #len(names) is used to check length of names list
+#       print names[i] #Prints out the names list with i as index
+#       i += 1 #Increases i so that subsequent items in list can be printed
+i = 0
+while i < len(cars):
+        print cars[i]
+        i += 1
+    
     
 #6  No More Tears
 # Create a for loop that will iterate through the cyber attacks list and prints the following: 
@@ -59,9 +96,17 @@ while i <= 8:
 
 cyber_attacks = ['Wannacry', 'Petya', 'Locky', 'Krack Attack', 'Sambacry']
 
+for attack in cyber_attacks:
+     print('the attack at '+ str(cyber_attacks.index(attack)) + ' is ' + attack + '.')
 
 #7 Even
 # Declare a variable named even_list and assign it an empty list. Next, write a for loop that will place 25 even numbers starting from 0 into the even_list list. Print the even_list variable to see your results. 
+
+even_list = []
+for list in range (0, 51):
+    if list %2==0:
+        even_list.append(list)
+print(even_list)
 
 
 #8 Sum Up
