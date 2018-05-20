@@ -114,7 +114,12 @@ print(even_list)
 
 #i.e a number list of 10 will have a sum total of 45
 
-
+def add_up(num):
+    sum = 0
+    for i in range(num):
+        sum += i
+    print sum
+add_up(10)
 #9 East Coast vs West Coast - A Hip Hop Rivalry
 #The East Coast - West Coast hip hop rivalry was a feud between artist and fans of the East Coast hip hop and West Coast hip hop scenes from the mid to last 1990s. 
 
@@ -151,7 +156,15 @@ zip_codes = [90001,90002,90003,90004,90005,96822,90007,90008,90010,90011,90012,9
 # ...
 # 14
 # Fizz Buzz
-
+for number in range(1, 101):
+    if number % 3 == 0:
+        print ('Fizz')
+    elif number % 5 == 0:
+        print ('Buzz')
+    elif number % 3 == 0 and number % 5 == 0:
+        print ('Fizz Buzz')
+    else number %3 != 0 and number %5 !=0:
+        print str(number)
 
 #13 Fizz Buzz Again 
 #Do the same thing again using a while loop.
