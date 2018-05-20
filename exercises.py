@@ -158,14 +158,25 @@ zip_codes = [90001,90002,90003,90004,90005,96822,90007,90008,90010,90011,90012,9
 # Fizz Buzz
 for number in range(1, 101):
     if number % 3 == 0:
-        print ('Fizz')
+         print ('Fizz')
     elif number % 5 == 0:
-        print ('Buzz')
+         print ('Buzz')
     elif number % 3 == 0 and number % 5 == 0:
-        print ('Fizz Buzz')
+         print ('Fizz Buzz')
     elif number % 3 != 0 and number % 5 != 0:
-        print str(number)
+         print str(number)
 
 #13 Fizz Buzz Again 
 #Do the same thing again using a while loop.
 
+count = 0
+while count < 101:
+    if count %3 == 0:
+        print ('fizz')
+    elif count % 5 == 0:
+        print ('buzz')
+    elif count % 3 != 0 and count % 5 != 0:
+        print ('fizz buzz')
+    else: 
+         print (count) 
+    count +=1   
