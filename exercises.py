@@ -97,7 +97,7 @@ while i < len(cars):
 cyber_attacks = ['Wannacry', 'Petya', 'Locky', 'Krack Attack', 'Sambacry']
 
 for attack in cyber_attacks:
-     print('the attack at '+ str(cyber_attacks.index(attack)) + ' is ' + attack + '.')
+     print('The attack at '+ str(cyber_attacks.index(attack)) + ' is ' + attack + '.')
 
 #7 Even
 # Declare a variable named even_list and assign it an empty list. Next, write a for loop that will place 25 even numbers starting from 0 into the even_list list. Print the even_list variable to see your results. 
@@ -163,7 +163,7 @@ for number in range(1, 101):
         print ('Buzz')
     elif number % 3 == 0 and number % 5 == 0:
         print ('Fizz Buzz')
-    else number %3 != 0 and number %5 !=0:
+    elif number % 3 != 0 and number % 5 != 0:
         print str(number)
 
 #13 Fizz Buzz Again 
