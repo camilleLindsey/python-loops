@@ -127,10 +127,28 @@ add_up(10)
 
 rappers = ['Tupac', 'Biggie', 'Ice Cube', 'Nas', 'Snoop', '50 Cent', 'Nate Dogg', 'Wu Tang Clan', 'Kendrick Lamar']
 
+east_side=[]
+weessst_side=[]
+
+def artist (list):
+    for rapper in list:
+        if list.index(rapper)%2==0:
+            weessst_side.append(rapper)
+        else:
+            east_side.append(rapper)
+artist(rappers)
+print (east_side)
+print (weessst_side)
+       
+
+
 #10 Breaking Up is Easy
 #Create a for loop that will iterate through 10 even numbers (starting from 0) and stop printing at 10.
 
-
+for num in range (0, 20, 2):
+    if num == 10:
+        break
+    print (num)
 #11 Zip Codes
 #Create a for loop that will iterate through the zip codes list below and print all the zip codes except for 96822.
 
@@ -156,27 +174,27 @@ zip_codes = [90001,90002,90003,90004,90005,96822,90007,90008,90010,90011,90012,9
 # ...
 # 14
 # Fizz Buzz
-for number in range(1, 101):
-    if number % 3 == 0:
-         print ('Fizz')
-    elif number % 5 == 0:
-         print ('Buzz')
-    elif number % 3 == 0 and number % 5 == 0:
-         print ('Fizz Buzz')
-    elif number % 3 != 0 and number % 5 != 0:
-         print str(number)
+# for number in range(1, 101):
+#     if number % 3 == 0:
+#          print ('Fizz')
+#     elif number % 5 == 0:
+#          print ('Buzz')
+#     elif number % 3 == 0 and number % 5 == 0:
+#          print ('Fizz Buzz')
+#     elif number % 3 != 0 and number % 5 != 0:
+#          print str(number)
 
 #13 Fizz Buzz Again 
 #Do the same thing again using a while loop.
 
-count = 0
-while count < 101:
-    if count %3 == 0:
-        print ('fizz')
-    elif count % 5 == 0:
-        print ('buzz')
-    elif count % 3 != 0 and count % 5 != 0:
-        print ('fizz buzz')
-    else: 
-         print (count) 
-    count +=1   
+# count = 0
+# while count < 101:
+#     if count %3 == 0:
+#         print ('fizz')
+#     elif count % 5 == 0:
+#         print ('buzz')
+#     elif count % 3 != 0 and count % 5 != 0:
+#         print ('fizz buzz')
+#     else: 
+#          print (count) 
+#     count +=1   
